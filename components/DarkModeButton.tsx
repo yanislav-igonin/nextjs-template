@@ -1,4 +1,4 @@
-import useDarkMode, { ThemeMode } from "../utils/useDarkMode";
+import useDarkMode, { ThemeMode } from '../utils/useDarkMode';
 
 const darkModePath = <path
   strokeLinecap="round"
