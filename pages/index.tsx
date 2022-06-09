@@ -1,6 +1,6 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { DarkModeButton, MainCard } from '@components'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { DarkModeButton, MainCard } from '@components';
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <MainCard />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

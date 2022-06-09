@@ -1,7 +1,7 @@
 const techs = ['nextjs', 'typescript', 'tailwind'];
 
 const renderTechs = () => techs
-  .map((t) => <li className="underline-offset-2 underline dark:text-white" key={t}>{t}</li>)
+  .map((t) => <li className="underline-offset-2 underline dark:text-white" key={t}>{t}</li>);
 
 export const MainCard = () => <div className="p-20 shadow-md bg-white dark:bg-slate-600">
   <h1 className="text-4xl m-4 dark:text-white">nextjs template</h1>
@@ -9,4 +9,4 @@ export const MainCard = () => <div className="p-20 shadow-md bg-white dark:bg-sl
   <ul className="flex justify-center items-center flex-col">
     {renderTechs()}
   </ul>
-</div>
+</div>;

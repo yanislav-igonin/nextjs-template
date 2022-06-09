@@ -1,2 +1,2 @@
-export * from './DarkModeButton'
-export * from './MainCard'
+export * from './DarkModeButton';
+export * from './MainCard';
