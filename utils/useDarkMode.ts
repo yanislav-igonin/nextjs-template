@@ -18,7 +18,7 @@ function useDarkMode() {
     root.classList.remove(previousTheme);
     root.classList.add(theme);
 
-    if (typeof window !== 'undefined') {
+    if (isBrowser) {
       localStorage.setItem('theme', theme);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

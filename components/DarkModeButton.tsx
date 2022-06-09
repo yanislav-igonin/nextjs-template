@@ -18,7 +18,7 @@ const darkModePath = <path
 export const DarkModeButton = () => {
   const [theme, setTheme] = useDarkMode();
   const [color, setColor] = useState('text-slate-600');
-  const [path, setPath] = useState(darkModePath);
+  const [path, setPath] = useState(lightModePath);
 
   const isDarkNow = theme === ThemeMode.Dark;
   const nextTheme = isDarkNow ? ThemeMode.Light : ThemeMode.Dark;
