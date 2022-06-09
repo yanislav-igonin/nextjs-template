@@ -1,15 +1,10 @@
 import type { NextPage } from 'next'
-import Head from 'next/head';
-import Image from 'next/image';
-import useDarkMode from '../utils/useDarkMode';
+import Head from 'next/head'
+import { DarkModeButton } from '@components'
 
 const techs = ['nextjs', 'typescript', 'tailwind'];
 
-
-
 const Home: NextPage = () => {
-  const [theme, setTheme] = useDarkMode();
-
   const renderTechs = () => techs
     .map((t) => <li className="underline-offset-2 underline dark:text-white" key={t}>{t}</li>)
 
@@ -20,9 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="absolute top-0 right-0 p-2">
-        <button onClick={() => setTheme(theme)}>
-          <Image src="/darkmode.png" alt="dark mode" height={24} width={24} />
-        </button>
+        <DarkModeButton />
       </div>
 
       <main className="flex h-screen justify-center items-center bg-gradient-to-tr from-emerald-400 to-fuchsia-400 dark:from-emerald-600 dark:to-fuchsia-600">
