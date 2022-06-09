@@ -24,7 +24,7 @@ function useDarkMode() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [theme]);
 
-  return [previousTheme, setTheme] as [ThemeMode, Dispatch<ThemeMode>];
+  return [theme, setTheme] as [ThemeMode, Dispatch<ThemeMode>];
 }
 
 export default useDarkMode;
