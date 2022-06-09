@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         </button>
       </div>
 
-      <main className="flex h-screen justify-center items-center bg-gradient-to-tr from-emerald-400 to-fuchsia-400">
+      <main className="flex h-screen justify-center items-center bg-gradient-to-tr from-emerald-400 to-fuchsia-400 dark:from-emerald-600 dark:to-fuchsia-600">
         <div className="p-20 shadow-md bg-white dark:bg-slate-600">
           <h1 className="text-4xl m-4 dark:text-white">nextjs template</h1>
           <h2 className="text-2xl m-2 text-center dark:text-white">techstack</h2>
