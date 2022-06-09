@@ -16,13 +16,13 @@ const lightModePath = <path
 
 export const DarkModeButton = () => {
   const [nextTheme, setTheme] = useDarkMode();
-  const svgColor = nextTheme === ThemeMode.Dark ? 'text-slate-600' : 'text-white';
+  const color = nextTheme === ThemeMode.Dark ? 'text-slate-600' : 'text-white';
   const path = nextTheme === ThemeMode.Dark ? darkModePath : lightModePath;
   // TODO: there is a bug in the dark mode button when the page is reloaded
   return <svg
     onClick={() => setTheme(nextTheme)}
     xmlns="http://www.w3.org/2000/svg"
-    className={`cursor-pointer h-10 w-10 ${svgColor}`}
+    className={`cursor-pointer h-10 w-10 ${color}`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
