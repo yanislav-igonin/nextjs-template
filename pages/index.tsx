@@ -1,24 +1,27 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import Head from 'next/head';
+
+const techs = ['nextjs', 'typescript', 'tailwind'];
 
 const Home: NextPage = () => {
+  const renderTechs = () => techs
+    .map((t) => <li className="underline-offset-2 underline dark:text-white" key={t}>{t}</li>)
+
   return (
     <div>
       <Head>
         <title>NextJS Template</title>
-        <meta name="description" content="My NextJS Template" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="flex justify-center m-4">
-        <h1 className="text-4xl">NextJS Template</h1>
-      </header>
-
-      {/* <main>
-      </main> */}
-
-      {/* <footer className="flex sticky h-6 bg-orange-200">
-      </footer> */}
+      <main className="flex h-screen justify-center items-center bg-gradient-to-tr from-emerald-400 to-fuchsia-400">
+        <div className="p-20 shadow-md bg-white dark:bg-slate-600">
+          <h1 className="text-4xl m-4 dark:text-white">nextjs template</h1>
+          <h2 className="text-2xl m-2 text-center dark:text-white">techstack</h2>
+          <ul className="flex justify-center items-center flex-col">
+            {renderTechs()}
+          </ul>
+        </div>
+      </main>
     </div>
   )
 }
