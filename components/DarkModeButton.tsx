@@ -16,7 +16,7 @@ const lightModePath = <path
 
 export const DarkModeButton = () => {
   const [theme, setTheme] = useDarkMode()
-
+  // TODO: there is a bug in the dark mode button when the page is reloaded
   return <svg
     onClick={() => setTheme(theme)}
     xmlns="http://www.w3.org/2000/svg"
