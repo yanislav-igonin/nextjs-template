@@ -1,3 +1,6 @@
+import { GithubIcon } from '@components';
+import Link from 'next/link';
+
 const techs = ['next js', 'typescript', 'tailwindcss'];
 
 const renderTechs = () => techs
@@ -9,4 +12,9 @@ export const MainCard = () => <div className="p-20 shadow-md bg-white dark:bg-sl
   <ul className="flex justify-center items-center flex-col">
     {renderTechs()}
   </ul>
+  <div className='flex justify-center items-center mt-10'>
+    <a href="https://github.com/yanislav-igonin/nextjs-template" target="_blank" rel="noreferrer">
+      <GithubIcon />
+    </a>
+  </div>
 </div>;
