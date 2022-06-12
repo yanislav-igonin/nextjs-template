@@ -1,7 +1,6 @@
 import { GithubIcon } from '@components';
-import Link from 'next/link';
 
-const techs = ['next js', 'typescript', 'tailwindcss'];
+const techs = ['next js', 'typescript', 'tailwind css'];
 
 const renderTechs = () => techs
   .map((t) => <li className="underline-offset-2 underline dark:text-white" key={t}>{t}</li>);
